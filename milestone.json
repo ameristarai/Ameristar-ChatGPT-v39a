@@ -1,0 +1,13 @@
+{
+  "version": "1.6.0",
+  "milestone": "Node 24 LTS + ServerStatus + Custom 404",
+  "date": "2026-02-25",
+  "description": "Upgraded Node.js runtime to 24 LTS across netlify.toml, root package.json, and netlify/functions/package.json. Added @types/node@^24.0.0 to devDependencies. Integrated ServerStatus indicator into Footer.tsx (pings /.netlify/functions/health on load; green dot with animate-ping when operational, red when issues). Fixed custom 404: added [[redirects]] catch-all in netlify.toml routing all unmatched paths to index.html so React's getPageFromUrl() handles unknown routes and renders the custom NotFound/PandaGame page.",
+  "status": "stable",
+  "breaking_changes": "none",
+  "react_version": "19.2.4",
+  "vite_version": "^7.3.1",
+  "lucide_react_version": "^0.575.0",
+  "tailwind_version": "^3.4.17",
+  "node_version": ">=24"
+}

@@ -1,0 +1,34 @@
+/*
+ * index.css
+ * These three directives are replaced at build time by Tailwind's PostCSS
+ * plugin with only the CSS classes actually used in the project.
+ * Result: a small, optimised stylesheet instead of the full ~400 KB CDN download.
+ */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Global base styles ─────────────────────────────────────────────────────
+   Moved here from the inline <style> block in index.html.
+   Tailwind's base layer resets these if not explicitly set, so we add them
+   back as globals here.
+*/
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom scrollbar — WebKit only */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+::-webkit-scrollbar-thumb {
+  background: #e2e8f0;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #cbd5e1;
+}
